@@ -1,28 +1,52 @@
 🩺 FitPulse: Health Anomaly Detection from Fitness Devices
-FitPulse is a health anomaly detection system that processes fitness tracker data (heart rate, steps, and sleep) to identify unusual patterns and provide insights into user behavior.
+
+FitPulse is a health anomaly detection system that processes fitness tracker data (heart rate, steps, and sleep) to identify unusual patterns and provide actionable insights into user behavior.
 
 🚀 Features
 🔹 Data Collection & Preprocessing
-Import heart rate, steps, and sleep data from CSV/JSON.
-Clean timestamps, fix missing values, and align time intervals.
+
+Import fitness data (heart rate, steps, sleep) from CSV/JSON formats.
+
+Clean timestamps, handle missing values, and align data to consistent intervals.
+
 🔹 Feature Extraction & Modeling
-Extract statistical features using TSFresh.
-Use Facebook Prophet to model seasonal trends and detect deviations.
-Apply clustering algorithms (KMeans, DBSCAN) to group behaviors.
+
+Extract statistical features with TSFresh.
+
+Model seasonal trends and detect deviations using Facebook Prophet.
+
+Apply clustering algorithms (KMeans, DBSCAN) to group behavioral patterns.
+
 🔹 Anomaly Detection & Visualization
-Rule-based anomalies (e.g., thresholds on HR, steps).
+
+Rule-based anomalies (e.g., thresholds on HR, steps, or sleep hours).
+
 Model-based anomalies (residual errors, clustering outliers).
-Visualizations with Matplotlib & Plotly.
+
+Visualize insights with Matplotlib and Plotly.
+
 🔹 Dashboard for Insights
+
 Interactive dashboard built with Streamlit.
-Upload fitness tracker files, run anomaly detection, and visualize results.
-Export reports to PDF/CSV.
+
+Upload fitness tracker files, run anomaly detection, and view results in real time.
+
+Export anomaly reports to PDF/CSV.
+
 🛠 Tools & Technologies
-Python – main programming language.
+
+Python – core programming language.
+
 Libraries:
+
 Data: pandas, numpy
+
 Visualization: matplotlib, plotly
+
 ML/Stats: scikit-learn, tsfresh, prophet
-Clustering Algorithms: KMeans, DBSCAN
-Streamlit – interactive web app
-Data Formats: CSV, JSON
+
+Clustering: KMeans, DBSCAN
+
+Streamlit – for interactive dashboard.
+
+Data Formats: CSV, JSON.
